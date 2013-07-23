@@ -1,0 +1,98 @@
+<?php
+session_start();
+?>
+<html>
+	<head>
+			<title>Register Page</title>
+		<style>
+	
+		</style>
+	</head>
+	<body>
+			<center><div style="background-color:Brown;height:125px;width:600px;">  </div></center>
+			<center><div style="background-color:pink;height:400px;width:600px;">
+			<form action="validate.php" method="POST">	
+			<table >
+			<tr>
+			<th colspan="2"> <u>Contact Information</u></th>
+			</tr>
+
+			<tr> 
+			<th> First Name</th>
+			<td><input type="text" name="fname" id="fn" ></td>
+			</tr>	
+			
+			<tr> 
+			<th> Last Name</th>			
+			<td><input type="text" name="lname" id="sn"></td>
+			</tr>
+
+			<tr> 
+			<th> Address</th>			
+			<td><input type="text" name="address" id="addr"></td>
+			</tr>			
+
+			<tr> 
+			<th> City</th>			
+			<td><input type="text" name="city" id="city"></td>
+			</tr>
+
+
+			<tr> 
+			<th> Zip Code</th>			
+			<td><input type="text" name="zipcode" id="zip"></td>
+			</tr>
+
+			<tr> 
+			<th> State </th>			
+			<td>
+				<select>
+  					<option value="cairo">Cairo</option>
+				  	<option value="alex">ALex</option>
+					<option value="portsaid">Port Said</option>
+				    <option value="giza">Giza</option>
+				</select>				
+			</td>
+			</tr>
+
+			<tr> 
+			<th> phone</th>			
+			<td><input type="text" name="phone" id="phone"></td>
+			</tr>
+		
+			<tr> 
+			<th> E-mail</th>			
+			<td><input type="text" name="email" id="email"></td>
+			</tr>
+
+			<tr> 
+			<th> Website</th>			
+			<td><input type="text" name="website" id="website"></td>
+			</tr>
+			
+			<tr> 
+			<th> Passwd</th>			
+			<td><input type="password" name="passwd" id="passwd"></td>
+			</tr>
+
+			<tr> 
+			<th> Confirm Passwd</th>			
+			<td><input type="password" name="cpasswd" id="cpasswd"></td>
+			</tr>
+
+			<tr>
+			<td colspan="2">
+			<center><input type="submit" value="Send" align="center" target="_blank" onclick="return check()"></center>
+			</td>
+			<td>       
+			</tr>	
+						
+			</table>
+				
+			<img src="captcha.php" />
+
+			</div></center>
+<center><div style="background-color:Brown;height:100px;width:600px;">  	
+</body>
+
+</html>
